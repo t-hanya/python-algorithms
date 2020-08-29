@@ -14,7 +14,7 @@ class UnionFind:
         self.parent = [i for i in range(n)]
         self.rank = [0 for _ in range(n)]
 
-    def find(self, i: int) -> None:
+    def find(self, i: int) -> int:
         """Find the set identifier for the item `i`."""
         if self.parent[i] == i:
             return i
